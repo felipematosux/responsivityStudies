@@ -4,3 +4,57 @@
     object-fit:cover;
     margin-top:30px;
 }
+
+body {
+    background-color: green;
+}
+
+@media (min-width: 1000px) {
+    body {
+        background-color: blue;
+    }
+    h1 {
+        font-size: 60px;
+    }
+}
+
+@media (min-width:700px) and (max-width: 1000px) {
+    body {
+        background-color: purple;
+    }
+}
+@media (min-width:300px) and (max-width:700px) {
+    body {
+        background-color: aquamarine;
+    }
+}
+
+@media (max-width:300px) {
+    h1 {
+        font-size: 14px;
+    }
+}
+
+h1 {
+    font-size: 60px;
+    font-weight: normal;
+}
+
+@media only print {
+    h1 {
+        font-size: 40px;
+        font-weight: bold;
+    }
+}
+
+
+table, td {
+    border: 2px solid #000;
+
+}
+
+@media only print {
+    table, td {
+        border: none;
+    }
+}
